@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Slideshow</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      div {
+        width: 550px;
+        margin: 0 auto;
+      }
+    </style>
+    <!-- jQuery 라이브러리 연결 -->
+    <script src="js/jquery-3.7.1.js"></script>
+    <!-- gallery 플러그인 연결 -->
+    <script src="js/gallery.js"> </script>
+    <!-- 제이쿼리 -->
+    <script language="javascript" type="text/javascript">
+      $(function () {
+        $("#gallery").gallery({
+          slideshow_transition_effect:
+            "Mosaic,Wipe_from_horizontal_blind,Wipe_from_vertical_blind,Wipe_from_vertical_center,Wipe_from_horizontal_center,Wipe_to_horizontal_center,Wipe_to_vertical_center,Wipe_from_bottom_to_top,Wipe_from_top_to_bottom,Wipe_from_right_to_left",
+          slideshow_time_interval: "4000",
+          slideshow_window_width: "400",
+          slideshow_window_height: "300",
+          slideshow_background_color: "#FFF",
+          slideshow_border: "#999 solid 2px",
+          text_effect: "text_fade",
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <h1>image slideshow</h1>
+    <div id="gallery">
+      <!-- 10개의 이미지를 ul li a태그로 넣기 -->
+       <ul>
+        <li>
+          <a href="#">
+            <img src="images/slideshow_large_1.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/slideshow_large_2.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/slideshow_large_3.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/slideshow_large_4.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/slideshow_large_5.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/slideshow_large_6.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/slideshow_large_7.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/slideshow_large_8.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/slideshow_large_9.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/slideshow_large_10.jpg" alt="">
+          </a>
+        </li>
+       </ul>
+    </div>
+  </body>
+</html>
